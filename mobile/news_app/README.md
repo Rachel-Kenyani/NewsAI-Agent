@@ -1,17 +1,17 @@
-# news_app
+# News AI mobile app
 
-A new Flutter project.
+This is the Flutter client project. From this directory, install dependencies
+and run it on a connected device or simulator:
 
-## Getting Started
+```bash
+flutter pub get
+flutter run
+```
 
-This project is a starting point for a Flutter application.
+See the repository [README](../../README.md) for backend startup and
+device-specific API URL configuration. The current UI is still the Flutter
+counter demo; the API URL constant is not yet used by a client.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Application code is organized by responsibility: `lib/main.dart` starts the
+app, `lib/core/config/` contains shared configuration, and
+`lib/features/` contains feature-specific UI and behavior.
