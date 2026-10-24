@@ -3,10 +3,11 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import sqlite3
 import os
+from pathlib import Path
 
 app = FastAPI(title="News Agent API")
 
-DB_PATH = "news_agent.db"
+DB_PATH = Path(__file__).resolve().parent / "news_agent.db"
 
 # Pydantic model for POST /news/fetch
 class FetchRequest(BaseModel):
