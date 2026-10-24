@@ -47,3 +47,7 @@ yet call the backend.
 - Keep local `.env` files and SQLite databases out of Git. If a credential was
   committed previously, rotate it; ignoring or deleting the file in a later
   commit does not erase it from Git history.
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
